@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-    <a class="navbar-brand" href="#">
-        Reiki
+    <a class="navbar-brand" (click)="scrollTo(home)" style="color:black">
+       <p style="color:black">Reiki</p>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -8,7 +8,7 @@
     </button>
     <div #menu class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" (click)="scrollTo(home)">HOME</a></li>
+            <li class="nav-item active"><a class="nav-link" (click)="scrollTo(home)" >HOME</a></li>
             <li class="nav-item active"><a class="nav-link" (click)="scrollTo(reiki)">REIKI</a></li>
             <li class="nav-item active"> <a class="nav-link" (click)="scrollTo(sobre)">SOBRE MIM</a></li>
             <li class="nav-item active"> <a class="nav-link" (click)="scrollTo(cursos)">CURSOS</a></li>
@@ -20,8 +20,8 @@
 </nav>
 
 <div #home class="jumbotron text-center">
-    <h1>Vera Lúcia</h1>
-    <p> Reiki, Florais de Bach, Terapia Quântica, Terapia Multidimensional, Munay-ki</p>
+    <h1 style="color:black">Vera Lúcia Gonçalves de Amorim</h1>
+    <p  style="color:black"> Reiki, Florais de Bach, Terapia Quântica, Terapia Multidimensional, Munay-ki</p>
 </div>
 
 <!-- Container (Home Section) -->
@@ -87,7 +87,7 @@
                 </div>
                 <div class="panel-body">
                     <p>Carga horária de 8 horas (das 9 ás 18 horas) incluindo aula prática no final do Nível.</p>
-                    <p>Prazo para reserva de matricula até 12 horas antes do curso.</p>
+                    <p>Prazo para reserva da matrícula: Até às 12 horas da sexta-feira anterior ao curso.</p>
                 </div>
                 <div class="panel-footer">
                     <p><strong>23 junho, 30 jun, 28 jul,</strong>
