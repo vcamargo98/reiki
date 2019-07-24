@@ -1,4 +1,4 @@
-body {
+  body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
@@ -19,12 +19,12 @@ body {
   }  
   .jumbotron {
     background-color: #dbc0da;
-    color: #ffff;
+    color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 60px 50px;
+    padding: 90px 50px;
   }
   .bg-grey {
     background-color: #f6f6f6;
@@ -54,7 +54,7 @@ body {
   .carousel-indicators li {
     border-color: #dbc0da;
   }
-  .carousel-indicators li.active {
+  .carousel-indicators li.dbc0da {
     background-color: #dbc0da;
   }
   .item h4 {
@@ -105,7 +105,7 @@ body {
     background-color: #dbc0da;
     color: #fff;
   }
-  
+
   .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
   }
@@ -117,21 +117,20 @@ body {
     border-color: transparent;
     color: #fff !important;
   }
-  
-.navbar {
-  z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-  line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-  font-family: Montserrat, sans-serif;
-  background-color: #dbc0da;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
 
+  .navbar {
+    z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+    line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+    font-family: Montserrat, sans-serif;
+    background-color: #dbc0da;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
 #navbarNav {
   justify-content: flex-end;
 }
@@ -139,12 +138,20 @@ body {
 .nav-item {
   cursor: pointer;
 }
+
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: #dbc0da;
   }
- 
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
   @keyframes slide {
     0% {
       opacity: 0;
@@ -180,4 +187,4 @@ body {
       font-size: 150px;
     }
   }
-
+  
