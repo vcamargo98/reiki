@@ -13,13 +13,9 @@ export class MessageService {
   constructor(private _http: HttpClient) { }
 
     sendMessage(body): Observable<any> {
-      return this._http.post<any>(this.url, { name: body.Name, email: body.Email, message: body.message })
+      return this._http.post<any>(this.url, { name: body.name, email: body.email, message: body.message })
         .pipe(
-          map(user => {
-          console.log(user);
-
-          })
-        );
+          map(user => {}));
     }
 
  

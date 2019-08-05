@@ -199,13 +199,13 @@
                 <form (ngSubmit)="contactForm(form.value); form.reset()" #form="ngForm" class="example-form">
             <div class="row">
                 <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required ngModel>
+                    <input class="form-control" id="name" name="name" placeholder="Nome" type="text" ngModel>
                 </div>
                 <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required ngModel>
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" ngModel>
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="message" placeholder="Sua Mensagem"
+            <textarea class="form-control" id="message" name="message" placeholder="Sua Mensagem"
                 rows="5" ngModel></textarea><br>
             <div class="row">
                 <div class="col-sm-12 form-group">
