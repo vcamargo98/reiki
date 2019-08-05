@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { MessageService } from '../service/message.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-principal',
@@ -9,7 +11,7 @@ export class PrincipalComponent implements OnInit {
   @ViewChild('menu', { static: true }) menu: ElementRef;
 
 
-  constructor() { }
+  constructor(public _MessageService: MessageService) { }
 
   ngOnInit() {
   }
@@ -24,6 +26,18 @@ export class PrincipalComponent implements OnInit {
       this.menu.nativeElement.classList.toggle('show');
 
     }
+  }
+
+  contactForm(form) {
+    this._MessageService.sendMessage(form).subscribe(() => {
+
+      Swal.fire(
+        'Enviado!',
+        'E-mail enviado com sucesso!',
+        'success'
+      );
+
+    });
   }
   
 

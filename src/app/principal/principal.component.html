@@ -196,21 +196,23 @@
             <p><span class="glyphicon glyphicon-envelope"></span> vgoamo@hotmail.com</p>
         </div>
         <div class="col-sm-7 ">
+                <form (ngSubmit)="contactForm(form.value); form.reset()" #form="ngForm" class="example-form">
             <div class="row">
                 <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                    <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required ngModel>
                 </div>
                 <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required ngModel>
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Sua Mensagem"
-                rows="5"></textarea><br>
+            <textarea class="form-control" id="comments" name="message" placeholder="Sua Mensagem"
+                rows="5" ngModel></textarea><br>
             <div class="row">
                 <div class="col-sm-12 form-group">
                     <button class="btn pull-right" type="submit" style="background-color: #dbc0da">Enviar</button>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </div>
