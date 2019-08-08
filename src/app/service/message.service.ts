@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class MessageService {
 
-  private url = 'http://localhost:3000/form';
+  private url = 'https://reiki-form.herokuapp.com/form';
 
   constructor(private _http: HttpClient) { }
 
