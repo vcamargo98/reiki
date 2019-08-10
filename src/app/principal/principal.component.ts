@@ -31,11 +31,13 @@ export class PrincipalComponent implements OnInit {
   contactForm(form) {
     this._MessageService.sendMessage(form).subscribe(() => {
 
-      Swal.fire(
-        'Enviado!',
-        'E-mail enviado com sucesso!',
-        'success'
-      );
+      Swal.fire({
+        title:'Enviado!',
+        text:'E-mail enviado com sucesso!',
+        type:'success',
+        showConfirmButton: false,
+        timer: 3000
+      });
 
     });
   }
