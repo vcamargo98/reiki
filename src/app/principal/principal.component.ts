@@ -30,7 +30,7 @@ export class PrincipalComponent implements OnInit {
 
   contactForm(form) {
     this._MessageService.sendMessage(form).subscribe(() => {
-
+      
       Swal.fire({
         title:'Enviado!',
         text:'E-mail enviado com sucesso!',
